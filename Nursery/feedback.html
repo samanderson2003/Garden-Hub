@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nursery Shop</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #F5F5DC;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #004225;
+            color: #FFF;
+            padding: 20px 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+        }
+
+        .navigation {
+            background-color: #004225;
+            color: #FFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px;
+        }
+
+        .navigation ul li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        .navigation ul li:last-child {
+            margin-right: 0;
+        }
+
+        .navigation ul li a {
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navigation ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">
+            <img src="nursery_logo.png" alt="Nursery Shop Logo">
+        </div>
+        <nav class="navigation">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="./products.html">Gifts</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="feedback">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Your Feedback</h2>
+                    <p>We appreciate your feedback. Share your thoughts, suggestions, or concerns with us:</p>
+                    <form action="submit_feedback.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedback">Your Feedback:</label>
+                            <textarea class="form-control" id="feedback" name="feedback" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Nursery Plant Shop</p>
+    </footer>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
